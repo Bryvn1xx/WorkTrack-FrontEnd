@@ -1,7 +1,16 @@
+import { useState } from 'react'
 import logo from './logo.svg';
 import './App.css';
 
+
+
+
+
+
 function App() {
+  const [authenticated, toggleAuthenticated] = useState(false)
+  const [user, setUser] = useState(null)
+
   return (
     <div className="App">
       <header className="App-header">
